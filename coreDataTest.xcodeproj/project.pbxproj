@@ -15,6 +15,8 @@
 		232BED4B1D65FFBD003C5E34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232BED491D65FFBD003C5E34 /* LaunchScreen.storyboard */; };
 		232BED561D65FFBD003C5E34 /* coreDataTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BED551D65FFBD003C5E34 /* coreDataTestTests.swift */; };
 		232BED611D65FFBD003C5E34 /* coreDataTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BED601D65FFBD003C5E34 /* coreDataTestUITests.swift */; };
+		23B3CC341D6C742E003AB5FB /* ReadStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3CC331D6C742E003AB5FB /* ReadStore.swift */; };
+		23B3CC361D6C74B8003AB5FB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3CC351D6C74B8003AB5FB /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		232BED5C1D65FFBD003C5E34 /* coreDataTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coreDataTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		232BED601D65FFBD003C5E34 /* coreDataTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreDataTestUITests.swift; sourceTree = "<group>"; };
 		232BED621D65FFBD003C5E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23B3CC331D6C742E003AB5FB /* ReadStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadStore.swift; sourceTree = "<group>"; };
+		23B3CC351D6C74B8003AB5FB /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = ../CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		232BED3C1D65FFBD003C5E34 /* coreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				23B3CC351D6C74B8003AB5FB /* CoreDataStack.swift */,
 				232BED3D1D65FFBD003C5E34 /* AppDelegate.swift */,
 				232BED3F1D65FFBD003C5E34 /* ViewController.swift */,
 				232BED411D65FFBD003C5E34 /* Main.storyboard */,
@@ -106,6 +111,7 @@
 				232BED491D65FFBD003C5E34 /* LaunchScreen.storyboard */,
 				232BED4C1D65FFBD003C5E34 /* Info.plist */,
 				232BED441D65FFBD003C5E34 /* coreDataTest.xcdatamodeld */,
+				23B3CC331D6C742E003AB5FB /* ReadStore.swift */,
 			);
 			path = coreDataTest;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B3CC361D6C74B8003AB5FB /* CoreDataStack.swift in Sources */,
 				232BED461D65FFBD003C5E34 /* coreDataTest.xcdatamodeld in Sources */,
 				232BED401D65FFBD003C5E34 /* ViewController.swift in Sources */,
+				23B3CC341D6C742E003AB5FB /* ReadStore.swift in Sources */,
 				232BED3E1D65FFBD003C5E34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = coreDataTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.coreDataTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = coreDataTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.coreDataTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,6 +498,7 @@
 				232BED671D65FFBD003C5E34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		232BED681D65FFBD003C5E34 /* Build configuration list for PBXNativeTarget "coreDataTestTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +507,7 @@
 				232BED6A1D65FFBD003C5E34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		232BED6B1D65FFBD003C5E34 /* Build configuration list for PBXNativeTarget "coreDataTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +516,7 @@
 				232BED6D1D65FFBD003C5E34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
